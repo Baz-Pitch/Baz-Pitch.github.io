@@ -1,58 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>My website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Senthil Kumar - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #4d4135; /* Brownish grey color */
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        ul li:not(:last-child)::after {
+            content: '|';
+            color: #ccc;
+            margin-left: 10px;
+        }
+        ul li i {
+            margin-right: 5px;
+            color: gray;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #004080;
+        }
+        .rule-after {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .rule-after hr {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ccc;
+            border: none;
+        }
+        h2 {
+            color: #4d4135; 
+        }
+        h3 {
+            color: #6e5f51; 
+        }
+        .check {
+            text-align: center;
+        }
+        .bg {
+            background-color: #e0e0e0;
+        }
+        footer {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Shivani</h1>
-<nav>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#myscores">My Scores</a>
-</nav>
-<p>Welcome to my personal website!</p>
-</header>
-<section id="about">
-<h2>About Me</h2>
-<p>My name is Shivani. I am currently pursuing B.Tech CSE in VIT Chennai</p>
-</section>
-<section id="contact">
-<h2>Contact Me</h2>
-<a href="mailto:shivanisenk2020@gmail.com">Send email to me</a></p>
-  <a href="tel:+918072108826">+91 8072108826</a>
-</section>
-<section id="myscores">
-<h2>My scores</h2>
-<table border=1 bordercolor=black>
-<tr>
-<th>Semester</th>
-<th>CGPA</th>
-</tr>
-<tr>
-<td>Fall 22-23</td>
-<td>9.12</td>
-</tr>
-<tr>
-<td>Winter 22-23</td>
-<td>9.08</td>
-</tr>
-<tr>
-<td>Fall 23-24</td>
-<td>8.98</td>
-</tr>
-</table>
-</section>
-<section>
-<h2>External Links</h2>
-<p>Check out my GitHub profile: <a href="https://github.com/Baz-Pitch" target="_blank">GitHub</a></p>
-</section>
-<section>
-<h2>University contact</h2>
-<img src="vit.jpeg" alt="VIT">
-</section>
-<footer>
-<p>&copy; 2024 VIT. All rights reserved.</p>
+
+<div class="resume-container">
+    <header class="bg">
+        <h1>Shivani Senthil Kumar</h1>
+        <ul class="check">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:hi@example.com">shivaniparameshwari@gmail.com</a></li>
+            <li><i class="fas fa-mobile-alt"></i> <a href="tel:8072108826">8072108826</a></li>
+            <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/shivani-s-991151262/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <div class="rule-after">
+            <hr>
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <h3>UG: VELLORE INSTITUTE OF TECHNOLOGY - CHENNAI</h3>
+        <p>Bachelor of Technology in Computer Science and Engineering - 2022 to 2026</p>
+        <ul>
+            <li>CGPA: 8.98</li>
+        </ul>
+        <h3>SRIMATHI SUNDARAVALLI MEMORIAL SCHOOL - CHENNAI</h3>
+        <ul>
+            <li>Class 12: 95%</li>
+            <li>Class 10: 96%</li>
+        </ul>
+        <div class="rule-after">
+            <hr>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Technical:</strong> Python, C, C++, Java (Intermediate), Flutter, HTML</li>
+            <li><strong>Database:</strong> MySQL</li>
+            <li><strong>Tools:</strong> GIT</li>
+        </ul>
+        <div class="rule-after">
+            <hr>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Library Management System - December 2021 to January 2022</h3>
+                <ul>
+                    <li>Front end: Python (TKinter)</li>
+                    <li>Back end: MySQL</li>
+                    <li>A comprehensive application for organizing and tracking available books.</li>
+                    <li>Features: Membership login, admin tasks, user functions.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Digital Doorlock System using Blockchain - August 2023 to September 2023</h3>
+                <ul>
+                    <li>Access control using relay and fingerprint sensor components.</li>
+                    <li>Programmed in C/C++ via Arduino IDE.</li>
+                    <li>Blockchain implementation using Ethereum for secure access control.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="rule-after">
+            <hr>
+        </div>
+    </section>
+
+    <section>
+        <h2>Accomplishments</h2>
+        <h3>Codemaze Mayhem Competition</h3>
+        <ul>
+            <li>Runner-up in Codemaze Mayhem (Coding Competition) during TechnoVIT.</li>
+        </ul>
+
+        <h3>INTEL Workshop</h3>
+        <ul>
+            <li>Attended a hands-on workshop by INTEL on the topic AI for future workforce.</li>
+        </ul>
+
+        <h3>Toastmasters</h3>
+        <ul>
+            <li>Part of an international organization that helps in improving oration skills and collaborating with like-minded people.</li>
+        </ul>
+        <div class="rule-after">
+            <hr>
+        </div>
+    </section>
+</div>
+
+<footer class="bg">
+    Copyrights : Shivani Senthil Kumar
 </footer>
+
 </body>
 </html>
